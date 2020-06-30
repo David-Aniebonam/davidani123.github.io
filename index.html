@@ -85,12 +85,16 @@ body, html {
 <div class="w3-content w3-container w3-padding-64" id="about">
   <h3 class="w3-center">2nd Year MSc Computer Science</h3>
   <p class="w3-center"><em>Currently Studying at Loughborough University</em></p>
-  <p class="w3-large w3-center w3-padding-16">Programming and design experience in:</p>
-  <p class="w3-wide"><i class="fa fa-laptop"></i>Python</p>
-  <p class="w3-wide"><i class="fa fa-laptop"></i>JavaScript</p>
-  <p class="w3-wide"><i class="fa fa-laptop"></i>UI/UX design (Adobe XD)</p>
-  <p class="w3-wide"><i class="fa fa-laptop"></i>Web development languages (HTML,CSS)</p>
-  <p class="w3-wide"><i class="fa fa-laptop"></i>AI development</p>
+  <p class="w3-center"><em>This site is coded and maintained by me.</em></p>
+  <p class="w3-large w3-center w3-padding-16">Programming and design experience:</p>
+  <p class="w3-wide"><i class="fa fa-laptop"></i>PYTHON</p>
+  <p class="w3-wide"><i class="fa fa-laptop"></i>JAVASCRIPT</p>
+  <p class="w3-wide"><i class="fa fa-laptop"></i>SQL</p>
+  <p class="w3-wide"><i class="fa fa-laptop"></i>SWIFT</p>
+  <p class="w3-wide"><i class="fa fa-laptop"></i>UI/UX DESIGN</p>
+  <p class="w3-wide"><i class="fa fa-laptop"></i>ANDROID AND IOS APP DEVELOPMENT</p>
+  <p class="w3-wide"><i class="fa fa-laptop"></i>WEB DEVELOPMENT LANGUAGES (HTML, CSS)</p>
+  <p class="w3-wide"><i class="fa fa-laptop"></i>AI DEVELOPMENT</p>
 </div>
 
 <!-- Second Parallax Image with Portfolio Text -->
@@ -108,11 +112,38 @@ body, html {
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
   <div class="w3-row-padding w3-center">
     <div class="w3-col m3">
-      <img src="EzEats logo.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="EZeats">
+      <img src="EzEats logo.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Still under development. EzEats is a Recipe generator which I am developing in Swift.
+      It allows users to enter ingredients they currently have in their fridge and it returns a possible recipe.
+      It uses searching algorithms to find recipes that match the inputted ingredients. Due to University work, it is still currently
+       under development but I plan to finish it this summer.">
+    </div>
+    <div class="w3-col m3">
+      <img src="UniBuddyLogo.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Android Revision Scheduler. 
+      Creates a revision plan from inputted modules and sets alarms on your phone for the sessions.
+      Programmed in Java on Android Studio, It utilises an SQLite Database to store modules and revision session times, 
+      aswell as featuring my own notification service.">
+    </div>
+    <div class="w3-col m3">
+      <img src="makeitall.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Helpdesk Website developed as part of a team for university module.
+       I along with 5 others, Developed a helpdesk system to deal with client software and hardware problems, providing a knowledge base and ticket response system.
+        The site was developed using wordpress and the team achieved a First class grade.">
+    </div>
+    <div class="w3-col m3">
+      <img src="ANNpicture.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Artifical Neural Network to predict Pan Evaporation. 
+      I developed A neural network to predict pan evaporation, using over 1000 sample data entries. The ANN was programmed in python and utilised graphing modules
+      to provide a visualisation for the error decrease over a given number of epochs. The number of hidden layer nodes was programmed to be flexible, and the ANN made use of backpropagation, annealing, momentum and a bold driver.
+      The error rate was depicted using the root mean squared error formula.">
     </div>
   </div>
 </div>
-
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
 <!-- Third Parallax Image with Portfolio Text -->
 <div class="bgimg-3 w3-display-container w3-opacity-min">
   <div class="w3-display-middle">
